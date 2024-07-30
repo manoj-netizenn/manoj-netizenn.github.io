@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+  .projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+.tex{
+ justify-self: center;
+  font-size: 1.65rem;
+}
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+        <div class="container">
+          <a class="navbar-brand" href="#home">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section class="about-section" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/WhatsApp_Image_2024-05-11_at_11.12.45_46eae4a2-removebg-preview (1).png" alt="About Me">
+    <p>I am Manojkumar P M a computer science undergraduate currently in my third year at the reputed University 
+      Visvesvaraya College of Engineering (UVCE) in Bangalore. I am a tech-savvy guy who is always up-to-date with the latest trends in technology. In my first year, I gained valuable experience as a trainee at Salesforce having strong understanding of Salesforce fundamentals . I have 
+      a deep passion for working as a pentester My curiosity extends
+       to the fields of Open Source Intelligence (OSINT) and reconnaissance (RECON). 
+       I often find myself footprinting websites and exploring various aspects of their structure 
+       and security Dedicated to continuous learning and exploring new techniques in web security😎</p>
+  </div>
+</section>
+<!-- Projects Section -->
+<section class="projects-section bg-light" id="projects">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images\projects\graph.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Extracted the data given in spreadsheet using python frameworks pandas and numpy gained valuable results during the internship</p>
+              <a href="https://drive.google.com/file/d/1ZotSbfM1NRV8NItWgv6bbLvvsg79hfp4/view?usp=drive_link" class="btn btn-primary">Blog Post</a>
+              <a href="https://github.com/Manoj-netizenn/data-analysin" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images\skills\github-6980894_1280.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">other Projects</h5>
+              <p class="card-text">my github has some beginner freindly projects</p>
+              <a href="#contact" class="btn btn-primary">link to profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </section>
+  <section class="skills-section bg-white" id="skills">
+    <div class="container">
+      <h2 class="text-center">Skills & Certifications</h2>
+      <div class="row">
+        <!-- Skill 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="\images\skills\Python-logo-notext.svg.png" class="card-img-top" alt="Python">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">I have a good understanding of python module system and have spent time on working some of libraries like beautiful soup,pandas,numpy.</p>
+              <a href="https://jovian.ai/mallappanavarmanoj" class="btn btn-outline-primary">Link to bootcamp</a>
+            </div>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images\skills\st,small,507x507-pad,600x600,f8f8f8.u1.jpg" class="card-img-top" alt="Data analytics">
+            <div class="card-body">
+              <h5 class="card-title">Data analytics</h5>
+              <p class="card-text">The Global Restaurant Data Analysis project aims to analyze a diverse dataset containing information about restaurants. The dataset includes details such as restaurant names, locations, cuisines, ratings, reviews, and other relevant metrics</p>
+              <a href="https://drive.google.com/file/d/1GMwM3PejmrvRVhPLODNcbV97ipd70SkH/view?usp=drive_link" class="btn btn-outline-primary">Link to certificate</a>
+            </div>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images\skills\images11.png" class="card-img-top" alt="SQL">
+            <div class="card-body">
+              <h5 class="card-title">Google cloud</h5>
+              <p class="card-text">skilled in leveraging Google's cloud computing services and infrastructure to build, deploy, and manage scalable applications and services.</p>
+              <a href="https://www.cloudskillsboost.google/public_profiles/98e3df59-62c4-433d-8d0d-26f838e5b8b7" class="btn btn-outline-primary">Link to profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+       <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images\skills\images (1).png" class="card-img-top" alt="linux">
+            <div class="card-body">
+              <h5 class="card-title">Salesforce Certification</h5>
+              <p class="card-text" >Salesforce Administrator Trainee with a strong understanding of Salesforce fundamentals. Proficient in managing user accounts, customizing objects, and creating reports.</p>
+              <a href="https://smartinternz.com/internships/salesforce_certificates/3d738ba741a9cfd5af860d9933673be3" class="btn btn-outline-primary">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Me Section -->
+<section class="contact-section text-center text-white bg-dark" id="contact">
+    <div class="container">
+        <img src="images\contact\gmail.png" alt="contact" class="social-icon">
+      <h2>Contact Me</h2>
+      <div class="row">
+        <div class="col-lg-6">
+            <img src="images\contact\gmail.png" alt="contact" class="social-icon">
+          <p><i class="fas fa-envelope"></i>mallappanavarmanoj@gmail.com</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="images\contact\old-typical-phone.png" alt="contact" class="social-icon">
+
+          <p><i class="fas fa-phone"></i>+917625073402</p>
+        </div><br><h3 class="container"> Social</h2><br>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="https://www.linkedin.com/in/manoj-p-m-57b14a242/" target="_blank">
+            <img src="images\contact\linkedin.png" alt="LinkedIn" class="social-icon">
+            LinkedIn
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="#" target="_blank">
+            <img src="images\contact\instagram.png" alt="Twitter" class="social-icon">
+            Instagram
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="https://github.com/Manoj-netizenn" target="_blank">
+            <img src="images\contact\github.png" alt="GitHub" class="social-icon">
+            GitHub
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="#" target="_blank">
+            <img src="images\skills\1_sHhtYhaCe2Uc3IU0IgKwIQ.png" alt="Medium" class="social-icon">
+            Medium
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="#" target="_blank">
+            <img src="images\skills\youtube-7441044_1280.png" alt="YouTube" class="social-icon">
+            YouTube
+          </a>
+        </div>
+       
+          <div class="col-lg-2 col-md-4 mb-4">
+            <a href="#" target="_blank">
+              <img src="images\skills\twitter-2430933_1920.png" alt="Twitter" class="social-icon">
+              Twitter
+            </a>
+          </div>
+      </div>
+    </div>
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
